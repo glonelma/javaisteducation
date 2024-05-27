@@ -1,0 +1,244 @@
+@import url('http://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* top navbar */
+/* .display{
+    background-color:red;
+    color: white;
+    padding: 10px; 
+    display: flex;
+    justify-content: space-between;
+    align-items:end ;
+    height: 80px;
+    font-weight:lighter;
+    font-size: large;
+}
+.display >div{
+    padding: 20px;
+} */
+/* top navbar */
+
+.navbar-links{
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar-links ul{
+    display: flex;
+	padding: 30px;
+}
+.navbar-links ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+.navbar-links ul li a{
+    text-decoration: none;
+    color: black;
+    font-size:15px;
+    font-weight: bolder;
+    padding-top: 50px;
+}
+
+/* about us */
+.about{
+    background-color: #e3ecef;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    color: black;
+    margin: 60px 0 30px 0;
+    padding: 80px;
+}
+.texts h1{
+    color: #e82929;
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+.texts p{
+    width: 80%;
+    margin-bottom: 70px;
+}
+.texts a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #e82929;
+}
+.texts a:active{
+    background-color: white;
+    color: #181f32;
+}
+
+/* .back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index:-1;
+} */
+
+/* 1 cards */
+.container{
+    max-width: 1200px;
+    width: 95%;
+}
+.slider-wrapper{
+    position: relative;
+}
+.slider-wrapper .slide-button{
+    position: absolute;
+    top: 130px;
+    height: 50px;
+    width: 50px;
+    color: #f5f3f3;
+    border: none;
+    outline: none;
+    background: #000;
+    font-size: 2.2rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.slider-wrapper .slide-button:hover{
+    background: #444;
+}
+.slider-wrapper .slide-button#prev-slide{
+    left: -10px;
+    display: none;
+}
+.slider-wrapper .slide-button#next-slide{
+    right: -10px;
+}
+.slider-wrapper .image-list {
+    display: grid;
+    gap: 18px;
+    font-size: 0;
+    margin-bottom: 30px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(10, 1fr);
+}
+.slider-wrapper .image-list::-webkit-scrollbar{
+    display: none;
+}
+.slider-wrapper .image-list .image-item{
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+}
+.card-title{
+    top: 130px;;
+}
+.container .slider-scrollbar{
+    height: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.slider-scrollbar .scrollbar-track{
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    position: relative;
+    border-radius: 4px;
+}
+.slider-scrollbar:hover .scrollbar-track{
+    height: 4px;
+}
+.slider-scrollbar .scrollbar-thumb{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    background: #000;
+    border-radius: inherit;
+    cursor: grab;
+}
+.slider-scrollbar .scrollbar-track:active{
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+.slider-scrollbar .scrollbar-thumb::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -10px;
+    bottom: -10px;
+} 
+
+/* footer */
+.footer{
+    display: inline-flex;
+    border: solid 1px black;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+    background-color: black;
+}
+.footer .logoLast img{
+    border: solid 1px black;
+    height: 300px;
+}
+.navs{
+    display: inline-flex;
+    text-align: left;
+}
+.navs h2{
+    font-weight: bold;
+    margin-left: 50px;
+    color: #e82929;
+    font-size: 20px;
+}
+.navs ul{
+    margin: 0 20px 0 20px;
+    padding: 10px;
+    text-align: left;
+}
+.navs ul li {
+    list-style-type: none;
+    margin: 0 20px;
+    line-height: 40px;
+    font-weight: bold;
+    color: white;
+}
+.navs ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+#contact{
+    width: 350px;
+}
+.navs ul li:hover{
+    color: #e82929;
+}
+.navs ul li a:hover{
+    color: #e82929;
+}
+
+.rights{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    border-top: 1px dashed white ;
+}
